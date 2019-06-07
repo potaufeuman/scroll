@@ -1,0 +1,18 @@
+.container{
+  float: left;
+  text-align: center;
+  margin: 30px auto;
+  width: 80%;
+}
+
+.btn{
+  position: fixed;
+  width: 10%;
+}
+
+.btn_2{
+  position: fixed;
+  width: 10%;
+  top: 120px;
+
+}

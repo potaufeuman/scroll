@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery_scroll</title>
+  <link rel="stylesheet", href="css/style.css">
+</head>
+<body>
+  <header id="h_top">
+    <h1>jQuery_scroll</h1>
+  </header>
+
+  <div class = "container">
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Nunc urna tortor, congue id quam maiesuada, sodales fermentum sapien, Morbi ullamcorper mauris magna.
+      Ut pretium odio nec varius pellentesque. 
+      Paecenas nec ante eget massa facilisis pellentesque.
+      <p></p>
+      Fusce tellus lorem, fringilla ut nisl ac, pulvinar venenatis sem.
+      Suspendisse ditum sollicitudin semper.
+      Integer ut lectus nisi. 
+      Donec vehicula augue vitae elefend commodo. 
+      Mauris vehicula velit nec tellus luctus, in semper arou ultricies. 
+      Donec aliquet interdum neque, ut cursus ipsum pretium ut.
+      <p></p>
+      Curabitur posuere ullamcorper lectus a auctor. 
+      Pellentasque habitant morbi tristique senectus et netus et metasuada fames ac turpis egestas. 
+      Nulla condimentum dolor id leo posuere consequat. 
+      Suspendisse tincidunt nibh lacus, dictum ullamcorper odio lobortis in consectetur velit. 
+      Nam vittae urma ultricies dui euismod lobortis eu at risus. 
+      Duis interdum ipsum arcu, sed lacinia nunc cursus a. 
+    </div>
+    <div id="bottom_page"></div>
+  </div>
+
+  <div>
+    <button id='scroll_top' class="btn btn-lg btn-primary">"△"</button>
+    <button id='scroll_bottom' class="btn_2 btn-lg btn-primary">"▽"</button>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script>
+    document.getElementById('scroll_top').addEventListener('click',function(){
+      $("html,body").animate({scrollTop:$('#h_top').offset().top});
+    });
+    document.getElementById('scroll_bottom').addEventListener('click',function(){
+      $("html,body").animate({scrollTop:$('#bottom_page').offset().top});
+    });
+  </script>
+
+</body>
+</html>
+
